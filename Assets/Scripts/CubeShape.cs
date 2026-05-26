@@ -2,8 +2,12 @@ using UnityEngine;
 
 public class CubeShape : Shape
 {
+    void Start()
+    {
+        Name = "Cube";
+    }
     public override void DisplayShapeText()
     {
-        shapeText.text = "The shape you clicked is a Cube";
+        shapeText.text = "The shape you clicked is a " + Name;
     }
 }
