@@ -7,7 +7,7 @@ public class PillShape : Shape
     {
         Name = "Pill";
     }
-    public override void DisplayShapeText()
+    public override void DisplayShapeText() // POLYMORPHISM
     {
         shapeText.text = "The shape you clicked is a " + Name;
     }

@@ -1,14 +1,14 @@
 using TMPro;
 using UnityEngine;
 
-public abstract class Shape : MonoBehaviour
+public abstract class Shape : MonoBehaviour // INHERITANCE
 {
     [SerializeField]
     public TextMeshProUGUI shapeText;
 
     private string _name;
 
-    public string Name
+    public string Name // ENCAPSULATION
     {
         get { return _name; }
         set
@@ -23,7 +23,7 @@ public abstract class Shape : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        DisplayShapeText();
+        DisplayShapeText(); // ABSTRACTION
     }
 
     public virtual void DisplayShapeText()
